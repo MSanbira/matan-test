@@ -1,0 +1,16 @@
+<div class="container">
+<h1>edit</h1>
+<% @items.each do |item| %>
+  <div class="edit-line">
+    <%= form_for(item) do |f| %>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+      <%= f.label :code %>
+      <%= f.text_field :code %>
+      <%= f.submit "submit", class: "btn" %>
+    <% end %>
+  </div>
+<% end %>
+</div>
+<%= link_to "save", update_all_path, class: "btn" %>
+<%= link_to "back", root_path, class: "btn" %>

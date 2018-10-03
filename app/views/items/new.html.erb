@@ -1,0 +1,11 @@
+<div class="container">
+<h1>new item</h1>
+<%= form_for(@item) do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :code %>
+  <%= f.text_field :code %>
+  <%= f.submit "add", class: "btn" %>
+<% end %>
+</div>
+<%= link_to "back", root_path, class: "btn" %>

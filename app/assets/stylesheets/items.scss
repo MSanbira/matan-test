@@ -1,0 +1,31 @@
+// Place all the styles related to the Items controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+table {
+    text-align: left;
+    td, th {
+      border: solid 0.1px black;
+      padding: 5px;
+    }
+}
+
+body {
+    color: black;
+}
+
+.btn {
+    border: solid 0.1px black;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.container {
+  margin-bottom: 20px;
+}
+
+.edit-line {
+  margin-bottom: 10px;
+}

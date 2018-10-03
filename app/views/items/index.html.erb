@@ -1,0 +1,22 @@
+<div class="container">
+<h1> Index </h1>
+<table>
+  <thead>
+    <tr>
+      <th>ITEM</th>
+      <th>CODE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @items.each do |item| %>
+      <tr>
+        <td><%= item.name %></td>
+        <td><%= item.code %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
+
+<%= link_to "edit", edit_path, class: "btn" %>
+<%= link_to "add", new_path, class: "btn" %>
