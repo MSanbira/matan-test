@@ -33,12 +33,17 @@ class ItemsController < ApplicationController
       render '/edit'
     end
   end
-  
   def update_all
-    Item.all.each do 
-      update
-    end
+    Item.all.each{|i|
+    i.update_attributes(name: params[:name],code: params[:code])
+    }
   end
+  
+  # def update_all
+  #   Item.all.each do 
+  #     update
+  #   end
+  # end
 
   private
 
